@@ -1,0 +1,15 @@
+{
+    "data": [
+      {
+        "instruction": "Create a basic HTML page structure",
+        "input": "",
+        "output": "<!DOCTYPE html>\n<html>\n<head>\n    <title>Page Title</title>\n</head>\n<body>\n\n<h1>This is a Heading</h1>\n<p>This is a paragraph.</p>\n\n</body>\n</html>"
+      },
+      {
+        "instruction": "Add a CSS rule to change the background color",
+        "input": "body {",
+        "output": "    background-color: lightblue;\n}"
+      }
+    ]
+  }
+  
