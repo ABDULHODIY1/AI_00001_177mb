@@ -12,5 +12,9 @@ TPU v5e-1 (bepul) uchun moslangan; CPU/GPU da ham ishlaydi.
 4. Google Drive ulansa, data va checkpointlar `MyDrive/nanogpt-uz` da saqlanadi. Colab uzilsa — yana **Run all**:
    trening oxirgi checkpointdan davom etadi.
 
+Model va checkpointlar o'zimizning **`.nit`** formatida saqlanadi (pickle/`.pt` emas):
+`MyDrive/nanogpt-uz/export/nanogpt_uz.nit` — vaznlar (bf16), tokenizer va sozlamalar **bitta faylda**;
+`checkpoints/pretrain.nit`, `sft.nit` — trening holati. `.nit` ni ochish kod bajarmaydi (safetensors kabi xavfsiz).
+
 Standart `real` model: 12 qatlam, d=768, MLA, 1 dense + 11 MoE qatlam (16 ekspert, top-2, 1 shared) —
 ~301M jami / ~94M faol parametr. Pretrain 110 daqiqa + SFT 20 daqiqa.
